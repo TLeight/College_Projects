@@ -1,0 +1,113 @@
+/* CSS for the cis-222 homework and projects */
+/* updates in hw4:
+   1 - nav ul adjusted for expanded menu
+   2 - h3 added to h1 and h2 style setting
+   3 - img width increased to 25%
+*/
+/* general */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+html { height: 100%; }
+body {
+  background-color: lightgray;
+  margin: 0 20px;
+  min-height: 100%;
+  padding-bottom: 50px;
+  position: relative;
+}
+nav {
+	background-color: rgb(152, 152, 126);
+}
+nav ul {
+	height: 100px;
+	display:grid;
+	grid-template-columns: repeat(5, 1fr);
+	align-items: center;
+	list-style-type:none;
+	text-align:center;
+}
+nav ul li {
+	padding: 10px;
+}
+nav ul li a {
+	display: block;
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 2em;
+}
+/* styles applied to header, nav */
+h1, h2, h3, p {
+  font-size: 1.5em;    
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+img {width: 25%;}
+/* tables */
+table {
+  /* Center the form on the page */
+  background: rgb(2,0,36);
+  background: linear-gradient(339deg, rgba(2,0,36,1) 0%, rgba(211,211,211,1) 0%, rgba(246,242,246,1) 100%, rgba(0,212,255,1) 100%);
+  margin: 20px auto;
+  width: 50%;
+  /* Form outline */
+  padding: 1em;
+  box-shadow: 5px 5px 5px gray;
+  border: solid black 1px;
+}
+/* default will be overridden by user */
+td, th {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+tr:hover {
+  background-color: #fcae28;
+}
+/* styles applied to forms */
+form {
+  background: rgb(2,0,36);
+  background: linear-gradient(339deg, rgba(2,0,36,1) 0%, rgba(211,211,211,1) 0%, rgba(246,242,246,1) 100%, rgba(0,212,255,1) 100%);    width: 50%;
+  padding: 1em;
+  box-shadow: 5px 5px 5px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  border: solid black 1px;
+}
+form > * {
+  align-self: center;
+}
+label {
+  /* Uniform size & alignment */
+  padding: 15px;
+  width: 150px;
+}
+#background {
+  width: 150px;
+}
+.return-button{
+  padding: 16px;
+  margin: 20px auto;
+  text-align: center;
+  width: 200px;
+}
+form  button{
+  padding: 16px;
+  text-align: center;
+  width: 200px;
+}
+/* footer */
+footer {
+  /*background-color: rgb(217, 198, 252);*/
+  text-align: center;
+    bottom: 0;
+}
