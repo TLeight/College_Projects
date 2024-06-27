@@ -1,0 +1,72 @@
+{% extends 'app.html.twig' %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+    <div class = "login_regesterHero_picture"></div>
+    <div class = "login_regesterMain">
+        <main>
+            <div class = "login_regesterPage">
+                <div class="regester_Page">
+                    <!--Title on register form -->
+                    <h1>Register</h1>
+                    <div class="registerText">
+                        {{ form_start(registrationForm) }}
+                            <div class = "firstName_registration">
+                            <!-- Label and text for first name-->
+                                {{ form_row(registrationForm.firstName) }}
+                                <br>
+                            </div>
+                            <div class = "lastName_registration">
+                            <!-- Label and text for last name-->
+                                {{ form_row(registrationForm.lastName) }}
+                                <br>
+                            </div>
+                            <div class = "userName_registration">
+                            <!-- Label and text for username-->
+                                {{ form_row(registrationForm.username) }}
+                                <br>
+                            </div>
+                            <div class = "email_registration">
+                            <!-- Label and text for email-->
+                                {{ form_row(registrationForm.email) }}
+                                <br>
+                            </div>
+                            <div class = "phoneNumber_registration">
+                            <!-- Label and text for phoneNumber-->
+                                {{ form_row(registrationForm.phoneNumber) }}
+                                <br>
+                            </div>
+                            <div class = "preferredCommunication_registration">
+                            <!-- Label and text for preferred communication-->
+                                {{ form_row(registrationForm.preferredCommunication) }}
+                                <br><br>
+                            </div>
+                            <div class = "password_registration">
+                            <!-- Label and text for password-->
+                                {{ form_row(registrationForm.plainPassword.first) }}
+                                <br>
+                            </div>
+                            <div class = "passwordConfirm_registration">
+                            <!-- Label and text for confirm password-->
+                                {{ form_row(registrationForm.plainPassword.second) }}
+                                <br>
+                            </div>
+
+                            <div class = "agreeTerms_registration">
+                            <!-- Link to Terms and conditions -->
+                                <a href="{{ path('terms_page') }}"><p>Agree to Terms</p></a>
+                            <!-- Label and check box to agree to terms-->
+                                {{ form_row(registrationForm.agreeTerms) }}
+                                <br>
+                            </div>
+                            <br><br>
+                            <!-- button to press after information on form is filled in-->
+                            <button type="submit" class="btn">Register</button>
+                        {{ form_end(registrationForm) }}
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+{% endblock %}
