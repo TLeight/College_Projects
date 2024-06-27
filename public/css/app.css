@@ -1,0 +1,1119 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    height: 60px;
+    color: #fff;
+    border-bottom: 2px solid #36442d;
+    background: rgb(157, 193, 131);
+    box-shadow: 0 0 5.6px rgba(0, 0, 0, 0.83), 0 0 45px rgba(0, 0, 0, 0.729);
+}
+/* Logo */
+
+header .site-title a {
+    position: absolute;
+    padding-left: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Lucida Sans Unicode";
+    font-size: 22px;
+}
+
+nav {
+    position: relative;
+    float: right;
+    padding-top: 25px;
+    padding-right: 50px;
+    text-align: center;
+    background-color: rgba(0, 255, 13, 0);
+    font-family: "Lucida Sans Unicode";
+    font-size: 20px;
+}
+
+/* Changes hero image for home page */
+
+.homeHero_picture {
+    position: relative;
+    height: 410px;
+    background: url("../images/homeimagenew.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+        0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+}
+/* Text placement on hero image */
+
+.HomeHero_text h1 {
+    position: relative;
+    float: right;
+    padding-top: 125px;
+    padding-right: 120px;
+    font-family: "Lucida Sans Unicode";
+    font-size: 40px;
+}
+/* Changes hero image for about page */
+
+.aboutHero_picture {
+    position: relative;
+    height: 410px;
+    background: url("../images/exerciseImage.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+        0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* changes hero image for login and register page */
+
+.login_regesterHero_picture {
+    position: relative;
+    height: 410px;
+    background: url("../images/login4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+        0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Centers contents of the page */
+
+main {
+    width: 70vw;
+    min-height: calc(100vh - 50px - 58.4px);
+    margin: 0 auto;
+    padding: 30px 30px;
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    background: rgb(157, 193, 131);
+    box-shadow: 0 0 12.4px rgba(0, 0, 0, 0.83), 0 0 99px rgba(0, 0, 0, 0.729);
+}
+
+.home table {
+    margin-right: auto;
+    margin-left: auto;
+    border-collapse: collapse;
+}
+
+h1 {
+    color: #000;
+    font-family: "Lucida Sans Unicode";
+    font-size: 20px;
+}
+
+p {
+    color: #000;
+    font-family: "Lucida Sans Unicode";
+    font-size: 15px;
+}
+
+a {
+    color: #fff;
+    font-family: "Lucida Sans Unicode";
+    /* text-decoration: none; */
+}
+/* Changes font size of "need an account?" link on the login page */
+
+.registerlink a {
+    font-size: 15px;
+}
+/* Chenges color of "need an account?" link on login page on hover */
+
+.registerlink a:hover {
+    color: #000;
+}
+
+/* any botton will change color when hovered over */
+
+button:hover {
+    color: #fff;
+    background-color: #7d9a68;
+}
+
+/* ========  Some of Login/Regester CSS  =========== */
+
+/* Button CSS for login and register page */
+
+.login_regesterPage button {
+    position: relative;
+    width: 230px;
+    border-radius: 8px;
+}
+/* Button CSS for login and register page on hover */
+
+.login_regesterPage button:hover {
+    color: #fff;
+    background-color: #7d9a68;
+}
+
+/* Title on login form */
+
+.login_regesterPage h1 {
+    padding-bottom: 30px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    font-family: "Lucida Sans Unicode";
+    font-size: 30px;
+}
+/* CSS for labels next to text boxes */
+
+.login_regesterPage label {
+    color: #fff;
+    font-family: "Lucida Sans Unicode";
+    font-size: 15px;
+    font-weight: lighter;
+}
+/* ========  Some of Login CSS  =========== */
+/* Appearance of login form */
+
+.login_Page {
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    display: inline-block;
+    justify-content: center;
+    width: 450px;
+    height: 450px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #1b1a1a;
+    border-radius: 8px;
+    background: linear-gradient(
+        109.6deg,
+        rgba(0, 0, 0, 0.93) 11.2%,
+        rgb(77, 74, 74) 78.9%
+    );
+    box-shadow: 0 0.3px 2.1px rgba(0, 0, 0, 0.077),
+        0 0.7px 5.1px rgba(0, 0, 0, 0.149), 0 1.4px 9.6px rgba(0, 0, 0, 0.213),
+        0 2.5px 17.2px rgba(0, 0, 0, 0.27), 0 4.6px 32.2px rgba(0, 0, 0, 0.326),
+        0 11px 77px rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Text box and button placement */
+
+.loginText {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+/* Text box size */
+.login_Page input {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    color: #000;
+    background-color: #fff;
+    font-size: 18px;
+}
+
+/* username label position */
+.username_login label {
+    position: absolute;
+    top: -16px;
+}
+/* password label position */
+.password_login label {
+    position: absolute;
+    top: 42px;
+}
+
+/* Error text for wrong information entered */
+.loginError {
+    position: absolute;
+    height: 32%;
+    color: #f00;
+    font-size: 18px;
+}
+
+/* ========  Some of Registration CSS  =========== */
+
+/* registration form appearance */
+
+.regester_Page {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    display: inline-block;
+    justify-content: center;
+    width: 490px;
+    height: 720px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #1b1a1a;
+    border-radius: 8px;
+    background: linear-gradient(
+        109.6deg,
+        rgba(0, 0, 0, 0.93) 11.2%,
+        rgb(77, 74, 74) 78.9%
+    );
+    box-shadow: 0 0.3px 2.1px rgba(0, 0, 0, 0.077),
+        0 0.7px 5.1px rgba(0, 0, 0, 0.149), 0 1.4px 9.6px rgba(0, 0, 0, 0.213),
+        0 2.5px 17.2px rgba(0, 0, 0, 0.27), 0 4.6px 32.2px rgba(0, 0, 0, 0.326),
+        0 11px 77px rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* error text for password confirm */
+
+.regester_Page li {
+    position: absolute;
+    color: #f00;
+    font-size: 12px;
+}
+
+/* Label and text box position */
+
+.registerText {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+/* text box appearance */
+
+.regester_Page input {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    color: #000;
+    background-color: #fff;
+    font-size: 18px;
+}
+
+/* First name label position */
+.firstName_registration label {
+    position: absolute;
+    top: -15px;
+}
+/* Last name label position */
+.lastName_registration label {
+    position: absolute;
+    top: 42px;
+}
+/* Username label position */
+.userName_registration label {
+    position: absolute;
+    top: 100px;
+}
+/* Email label position */
+.email_registration label {
+    position: absolute;
+    top: 160px;
+}
+
+.phoneNumber_registration label {
+    position: absolute;
+    top: 217px;
+}
+
+/* Preferred Communication label position */
+.preferredCommunication_registration label {
+    position: absolute;
+    top: 274px;
+    left: 0;
+}
+
+/* Preferred Communication dropdown position */
+.preferredCommunication_registration #registration_form_preferredCommunication {
+    position: absolute;
+    left: 0;
+    height: 25px;
+}
+
+/* Password label position */
+.password_registration label {
+    position: absolute;
+    top: 320px;
+}
+/* Confirm password label position */
+.passwordConfirm_registration label {
+    position: absolute;
+    top: 380px;
+}
+/* Agree to terms position and color */
+.agreeTerms_registration {
+    position: absolute;
+    top: 420px;
+    left: 55px;
+
+    color: #fff;
+}
+/* Terms and condition link color in form */
+.agreeTerms_registration p {
+    color: #fff;
+}
+/* Terms and conditions link color on hover */
+.agreeTerms_registration a:hover {
+    color: #7d9a68;
+}
+/* Terms and conditions link text color on hover */
+.agreeTerms_registration p:hover {
+    color: #7d9a68;
+}
+/* ==================About Page CSS========================== */
+/* Image size */
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+/* Paragraph text */
+.aboutText1 p {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+/* Creates a grid */
+
+.about {
+    /* create a grid layout for the second text block and the image */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+/* Position paragraph text to left side of page */
+.aboutText2 p {
+    /* sets the second text block to span two columns in the grid */
+    grid-column: 1 / span 1;
+    text-align: left;
+    font-size: 18px;
+}
+/* Image position, size and drop shadow */
+.aboutImage img {
+    /* sets the image to fill its grid cell */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+        0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ===============Home Page CSS============================= */
+
+* {
+    box-sizing: border-box;
+}
+/* Positioning and font for home page */
+main .home .flow {
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    color: #9caf88;
+    border-radius: 8px;
+    font-family: "Lucida Sans Unicode";
+}
+/* Appearance of sections in the home page */
+.home .flow section {
+    align-items: center;
+    margin: 2%;
+    color: #fff;
+    border-bottom: 8px;
+    background-color: #000000f3;
+    box-shadow: 0 0.3px 2.1px rgba(0, 0, 0, 0.077),
+        0 0.7px 5.1px rgba(0, 0, 0, 0.149), 0 1.4px 9.6px rgba(0, 0, 0, 0.213),
+        0 2.5px 17.2px rgba(0, 0, 0, 0.27), 0 4.6px 32.2px rgba(0, 0, 0, 0.326),
+        0 11px 77px rgba(0, 0, 0, 0.5);
+}
+/* Puts color in the <p> tag */
+.home .flow p {
+    word-wrap: break-word;
+    color: #9caf88;
+    /* padding: 5%; */
+}
+/* Removes padding from images in home page */
+.home .flow img {
+    /* width: 100%; */
+    padding: 0%;
+}
+/* Underlines <h3> tag in home page */
+.home .flow h3 {
+    text-decoration: underline;
+}
+/* Centers <h2> tag in home page */
+.home h2 {
+    text-align: center;
+    font-family: "Lucida Sans Unicode";
+    font-size: 65px;
+}
+/* Positions and colors <h1> tag in home page */
+.home h1 {
+    justify-content: center;
+    text-align: center;
+    color: #000;
+    font-family: "Lucida Sans Unicode";
+    font-size: 25px;
+}
+/* Changes color and font of <p> tag in home page */
+.home p {
+    color: #000;
+    font-family: "Lucida Sans Unicode";
+    font-size: 18px;
+}
+
+/* ================== Contact us CSS ======================= */
+/* Positioning and appearance of contact form */
+.contact_Page {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    justify-content: center;
+    width: 470px;
+    height: 590px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #1b1a1a;
+    border-radius: 8px;
+    background: linear-gradient(
+        109.6deg,
+        rgba(0, 0, 0, 0.93) 11.2%,
+        rgb(77, 74, 74) 78.9%
+    );
+    box-shadow: 0 0.3px 2.1px rgba(0, 0, 0, 0.077),
+        0 0.7px 5.1px rgba(0, 0, 0, 0.149), 0 1.4px 9.6px rgba(0, 0, 0, 0.213),
+        0 2.5px 17.2px rgba(0, 0, 0, 0.27), 0 4.6px 32.2px rgba(0, 0, 0, 0.326),
+        0 11px 77px rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* button position and appearance in contact page */
+.contactUs_page button {
+    position: relative;
+    width: 230px;
+    border-radius: 8px;
+}
+/* changes button color on hover in contact page */
+.contactUs_page button:hover {
+    color: #fff;
+    background-color: #7d9a68;
+}
+/* Appearance of <h1> tag in the contact page */
+.contactUs_page h1 {
+    padding-bottom: 30px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    font-family: "Lucida Sans Unicode";
+    font-size: 30px;
+}
+/* label color and font in contact page */
+.contactUs_page label {
+    color: #fff;
+    font-family: "Lucida Sans Unicode";
+    font-size: 15px;
+    font-weight: lighter;
+}
+/* text positioning inside the form in the contact page */
+.ContactUsText {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+/* Removes resize for the text area in the contact page */
+.contact_Page textarea {
+    resize: none;
+}
+/* color, font size and size of input areas of contact page */
+.contact_Page input {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    color: #000;
+    background-color: #fff;
+    font-size: 18px;
+}
+/* first name label position of contact page */
+.firstName_ContactUS label {
+    position: absolute;
+    top: -16px;
+}
+/* last name label position of contact page */
+.lastName_ContactUS label {
+    position: absolute;
+    top: 42px;
+}
+/* email label position of contact page */
+.email_ContactUS label {
+    position: absolute;
+    top: 100px;
+}
+/* textbox message label of contact page */
+.contact_message label {
+    position: absolute;
+    top: 158px;
+}
+/* text area size and font size of contact page */
+.contact_message textarea {
+    width: 300px;
+    height: 200px;
+    font-size: 18px;
+}
+/* Hero image of the contact page */
+.contactHero_picture {
+    position: relative;
+    height: 410px;
+    background: url("../images/contact.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+        0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ========= Nav Bar CSS =========== */
+/* navigation bar layout */
+.navbar {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3330;
+}
+/* text alignment, color and font size of navigation bar */
+.navbar a {
+    float: left;
+    padding: 6px;
+    padding-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+/* color of button on hover in the navigation bar */
+.navbar a:hover {
+    color: #fff;
+    border-radius: 10px;
+    background-color: #5e734e;
+}
+/* Hides icon until media query requirements are met */
+.icon {
+    display: none;
+    cursor: pointer;
+    color: #fff;
+}
+/* Highlights the link of the page that is currently being shown */
+.navbar a.active {
+    color: #fff;
+    border-radius: 10px;
+    background-color: #5e734e;
+}
+/* ========= Scheduler CSS =========== */
+
+/* Positioning and appearance of Schedule contact form */
+.scheduleContacts .contact_Page {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    display: inline-block;
+    justify-content: center;
+    width: 470px;
+    height: 590px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #1b1a1a;
+    border-radius: 8px;
+    background: linear-gradient(
+        109.6deg,
+        rgba(0, 0, 0, 0.93) 11.2%,
+        rgb(77, 74, 74) 78.9%
+    );
+    box-shadow: 0 0.3px 2.1px rgba(0, 0, 0, 0.077),
+        0 0.7px 5.1px rgba(0, 0, 0, 0.149), 0 1.4px 9.6px rgba(0, 0, 0, 0.213),
+        0 2.5px 17.2px rgba(0, 0, 0, 0.27), 0 4.6px 32.2px rgba(0, 0, 0, 0.326),
+        0 11px 77px rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Contacts and Schedule Success Message */
+.success-message {
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: #0000;
+}
+
+/* text over hero image */
+.ScheduleHero_picture h1 {
+    position: relative;
+    float: right;
+    padding-top: 125px;
+    padding-right: 835px;
+    font-family: "Lucida Sans Unicode";
+    font-size: 60px;
+}
+/* Adds hero image to the schedule page */
+.ScheduleHero_picture {
+    position: relative;
+    height: 410px;
+    background: url("../images/schedule2new.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+        0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+.scheduler h1 {
+    font-size: 3rem;
+}
+
+/* Styling for the section containing the list */
+
+.scheduler section {
+    margin-top: 2rem;
+}
+
+.scheduler .firstSection section {
+    margin-top: 40rem;
+}
+
+/* Styling for the list */
+.scheduler ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
+/* Styling for each appointment item */
+.scheduler li {
+    display: flex;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin: 1rem;
+    margin-bottom: 1rem;
+    padding: 30px;
+    text-align: center;
+    color: #9caf88;
+    border-radius: 0.5rem;
+    background-color: #000000d0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the appointment date */
+.scheduler .appointment-date {
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Styling for the appointment time */
+.scheduler .appointment-time {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+/* Styling for the cohort meeting */
+.scheduler .cohort-meeting {
+    order: 2;
+    font-size: 1rem;
+}
+
+/* Styling for the group meeting */
+.scheduler .group-meeting {
+    order: 3;
+    font-size: 1rem;
+}
+
+/* ========= Services CSS =========== */
+
+/* Adds hero image to the services page */
+.servicesHero_picture {
+    position: relative;
+    height: 410px;
+    background: url("../images/servicesheroimage2new.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+        0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ==============MealPlanner CSS==================== */
+/* Adds hero image to the Meal Planner page */
+.mealPlannerHero_picture {
+    position: relative;
+    height: 410px;
+    background: url("../images/foodPlanner1new.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+        0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for the header */
+.mealPlanner h1 {
+    margin-bottom: 1rem;
+    padding-bottom: 10px;
+    font-size: 2rem;
+}
+
+/* Styling for the list */
+.mealPlanner ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Styling for each meal plan item */
+.mealPlanner li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(50% - 0.5rem);
+    max-width: 600px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    color: #9caf88;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    background-color: #000000d0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the diet name */
+.mealPlanner .dietName {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/* Border for diet name */
+.mealPlanner li .dietName {
+    border-bottom: 2px solid #fff;
+}
+
+/* Styling for the diet description and name */
+.mealPlanner .dietDesc {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.dietName {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* Adds a black line at the bottom */
+}
+
+/* ========= Responsiveness CSS =========== */
+@media screen and (max-width: 768px) {
+    /* Adds hero image to the services page that fit on smaller devices */
+    .servicesHero_picture {
+        position: relative;
+        height: 410px;
+        background: url("../images/servicesheroimage2.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        /* object-fit: cover; */
+        background-size: cover;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+            0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Adds hero image to the Meal Planner page that fit on smaller devices */
+    .mealPlannerHero_picture {
+        position: relative;
+        height: 410px;
+        background: url("../images/foodPlanner1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        /* object-fit: cover; */
+        background-size: cover;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+            0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Changes hero image for home page that fit on smaller devices */
+
+    .homeHero_picture {
+        position: relative;
+        height: 410px;
+        background: url("../images/homeimage.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+            0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Adds hero image to the schedule page that fit on smaller devices */
+    .ScheduleHero_picture {
+        position: relative;
+        height: 410px;
+        background: url("../images/schedule2.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        /* object-fit: cover; */
+        background-size: cover;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+            0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+    }
+    /* Styling for the list */
+    .mealPlanner ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Styling for each meal plan item */
+    .mealPlanner li {
+        width: 100%;
+        max-width: none;
+        margin-right: 0;
+    }
+
+    /* Media query to adjust the layout for smaller screens */
+    /* Styling for the list */
+    .scheduler ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Styling for each appointment item */
+    .scheduler li {
+        width: 100%;
+        margin-right: 0;
+    }
+    /* Adjusts images to fit properly smaller screens */
+    .home .flow img {
+        width: 100%;
+        /* height: 100%; */
+        padding: 0%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    /* Adds hero image to the services page that fit on smaller devices */
+    .servicesHero_picture {
+        position: relative;
+        height: 410px;
+        background: url("../images/servicesheroimage2.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        /* object-fit: cover; */
+        background-size: cover;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+            0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Adds hero image to the Meal Planner page that fit on smaller devices */
+    .mealPlannerHero_picture {
+        position: relative;
+        height: 410px;
+        background: url("../images/foodPlanner1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        /* object-fit: cover; */
+        background-size: cover;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+            0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Changes hero image for home page that fit on smaller devices */
+
+    .homeHero_picture {
+        position: relative;
+        height: 410px;
+        background: url("../images/homeimage.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+            0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Adds hero image to the schedule page that fit on smaller devices */
+    .ScheduleHero_picture {
+        position: relative;
+        height: 410px;
+        background: url("../images/schedule2.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        /* object-fit: cover; */
+        background-size: cover;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+            0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+    }
+    /* changes navbar color and how links are displayed on smaller screens */
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+
+    .navbar a.icon {
+        display: block;
+    }
+    /* Aligns navbar and changes color when clicked on */
+    .navbar.responsive {
+        flex-direction: row;
+        align-items: flex-start;
+        height: 80px;
+        background: linear-gradient(
+            109.6deg,
+            rgba(0, 0, 0, 0.93) 11.2%,
+            rgb(77, 74, 74) 78.9%
+        );
+    }
+
+    .navbar.responsive a {
+        display: block;
+        text-align: left;
+    }
+
+    /* Home page responsiveness */
+    /* Adjusts images to fit properly smaller screens */
+    .home .flow img {
+        width: 100%;
+        /* height: 100%; */
+        padding: 0%;
+    }
+
+    /* Changes size of text on Hero image */
+    .HomeHero_text h1 {
+        position: relative;
+        float: right;
+        padding-top: 130px;
+        padding-right: 60px;
+        font-family: "Lucida Sans Unicode";
+        font-size: small;
+    }
+    /* Makes the sections align vertically */
+    main .home .flow {
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+        align-items: center;
+        color: #9caf88;
+        border-radius: 8px;
+        font-family: "Lucida Sans Unicode";
+    }
+    /* adds flex-direction for image placement */
+    main .about {
+        display: flex;
+        flex-direction: column-reverse;
+        place-content: center;
+        align-items: center;
+        color: #9caf88;
+        border-radius: 8px;
+        font-family: "Lucida Sans Unicode";
+    }
+
+    /* about page responsiveness */
+    .aboutText2 p {
+        float: bottom;
+        /* set the second text block to span two columns in the grid */
+        text-align: center;
+        font-size: 18px;
+    }
+    /* puts image at top of page */
+
+    .aboutImage {
+        display: flex;
+        float: right;
+        flex-direction: column-reverse;
+        place-content: center;
+        align-items: center;
+        width: 100%;
+        /* set the second text block to span two columns in the grid */
+        object-fit: cover;
+        object-position: top;
+    }
+    /* puts image at top of page */
+    .aboutImageMediaQuery {
+        float: right;
+        width: 100%;
+    }
+    /* contact responsiveness CSS */
+    /* Contact forms placement */
+    .contact_Page {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: inline-block;
+        justify-content: center;
+        width: 470px;
+        height: 555px;
+        margin-top: 100px;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #1b1a1a;
+        border-radius: 8px;
+        background: linear-gradient(
+            109.6deg,
+            rgba(0, 0, 0, 0.93) 11.2%,
+            rgb(77, 74, 74) 78.9%
+        );
+        box-shadow: 0 0.3px 2.1px rgba(0, 0, 0, 0.077),
+            0 0.7px 5.1px rgba(0, 0, 0, 0.149),
+            0 1.4px 9.6px rgba(0, 0, 0, 0.213),
+            0 2.5px 17.2px rgba(0, 0, 0, 0.27),
+            0 4.6px 32.2px rgba(0, 0, 0, 0.326), 0 11px 77px rgba(0, 0, 0, 0.5);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .scheduleContacts .contact_Page {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        display: inline-block;
+        justify-content: center;
+        width: 470px;
+        height: 560px;
+        margin-top: 100px;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #1b1a1a;
+        border-radius: 8px;
+        background: linear-gradient(
+            109.6deg,
+            rgba(0, 0, 0, 0.93) 11.2%,
+            rgb(77, 74, 74) 78.9%
+        );
+        box-shadow: 0 0.3px 2.1px rgba(0, 0, 0, 0.077),
+            0 0.7px 5.1px rgba(0, 0, 0, 0.149),
+            0 1.4px 9.6px rgba(0, 0, 0, 0.213),
+            0 2.5px 17.2px rgba(0, 0, 0, 0.27),
+            0 4.6px 32.2px rgba(0, 0, 0, 0.326), 0 11px 77px rgba(0, 0, 0, 0.5);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    footer {
+        position: relative;
+        margin-top: 100px;
+    }
+
+    header {
+        position: relative;
+        height: 80px;
+    }
+}

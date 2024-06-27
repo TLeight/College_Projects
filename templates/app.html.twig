@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+            <link href="{{ asset('css/normalize.css') }}" rel="stylesheet" media="all">
+            <link href="{{ asset('css/app.css') }}" rel="stylesheet" media="all">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+            <!-- Logo and link to home page-->
+                <div class="site-title"><a href="{{ path('home_page') }}"><strong>Life Coaching<br>with Samantha</strong></a></div>
+                <!-- Navigation bar-->
+                <nav class="navbar">
+                    <!-- Link to home page-->
+                    <a href="{{ path('home_page') }}">Home</a>
+                    <!-- Link to about page-->
+                    <a href="{{ path('about_page') }}">About</a>
+                    <!-- Link to services page-->
+                    <a href="{{ path('services_page') }}">Services</a>
+                    <!--Changes Navigation depending on if user is logged in or not -->
+                    <!-- If the user is logged in, add "Log out" in the navigation bar -->
+                    {% if app.user.username is defined %}
+                        <!-- Link to Meal Planner page-->
+                        <a href="{{ path('app_mealPlanner') }}">Meal/Activity Planner</a>
+                        <!-- Link to Schedule/Appointments page-->
+                        <a href="{{ path('app_schedule') }}">Appointments</a>
+                        <!-- Link to contact page-->
+                        <a href="{{ path('app_contacts') }}">Contact</a>
+                        <a class="nav-link" href="{{ path('app_logout') }}">Log out</a>
+                        <a href="#" class="icon" onclick="toggleMenu()">&#9776;</a>
+                    <!-- If use is not logged in then add "Log in" and "Registration" link to the navigation bar-->
+                    {% else %}
+                        <!-- Link to contact page-->
+                        <a href="{{ path('app_contacts') }}">Contact</a>
+                        <a href="{{path('app_register') }}">Register</a>
+                        <a class="nav-link" href="{{ path('app_login') }}">Log in</a>
+                        <a href="#" class="icon" onclick="toggleMenu()">&#9776;</a>
+                    {% endif %}
+                </nav>
+
+                <script>
+                    <!-- Function to change how the navigation bar appears on different size devices-->
+                    function toggleMenu() {
+                        var x = document.getElementsByClassName("navbar")[0];
+                        if (x.className === "navbar") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "navbar";
+                        }
+                    }
+
+                    window.addEventListener('resize', function(event){
+                        var x = document.getElementsByClassName("navbar")[0];
+                        if (window.innerWidth >= 768 && x.className.includes("responsive")) {
+                            x.className = "navbar";
+                        }
+                    });
+
+                    // Get the current page URL
+                    const currentUrl = window.location.href;
+
+                    // Get all the links in the navbar
+                    const links = document.querySelectorAll('.navbar a');
+
+                    // Loop through the links and add the active class to the one that matches the current URL
+                    links.forEach(link => {
+                    if (link.href === currentUrl) {
+                        link.classList.add('active');
+                    }
+                    });
+                </script>
+            </header>
+        </div>
+
+        {% block body %}{% endblock %}
+        <!-- Adds footer to each page-->
+        <footer>cis-294 &copy; 2023 &nbsp;&nbsp;&nbsp;<a href="{{ path('terms_page') }}">Terms and Conditions</a></footer>
+    </body>
+</html>
