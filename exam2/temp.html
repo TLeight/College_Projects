@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content="Average Temperature Calculator">
+		<meta name="description" content="Average Temperature Calculator">
+		<!-- add title here -->
+		<title>Weekly Average Temperature Calculator</title>
+		<!-- add link to css file here -->
+		<link rel="stylesheet" type="text/css" href="css/temp.css">
+  </head>
+  <body>
+    <!-- add header elements here -->
+    <h1>Weekly Average Temperature Calculator</h1>
+    
+    <p><img class="noshow, scale-image" src="images/weather.png" alt="Daily weather"></p>
+    <!-- form with table for collecting daily temps -->
+    <form action="temp.php" method="post" id="calculation">
+    
+    <table>
+      <tr>
+        <td>Monday</td>
+        <td><input type="number" name="monday" min="-30" max="140" value="0"></td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td><input type="number" name="tuesday" min="-30" max="140" value="0"></td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td><input type="number" name="wednesday" min="-30" max="140" value="0"></td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td><input type="number" name="thursday" min="-30" max="140" value="0"></td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td><input type="number" name="friday" min="-30" max="140" value="0"></td>
+      </tr>
+      <tr>
+        <td>Saturday</td>
+        <td><input type="number" name="saturday" min="-30" max="140" value="0"></td>
+      </tr>
+      <tr>
+        <td>Sunday</td>
+        <td><input type="number" name="sunday" min="-30" max="140" value="0"></td>
+      </tr>
+
+      <td colspan="2">
+        <input type="submit" value="Submit" class="centercell">
+        </td>
+
+    </table>
+
+    </form>
+    <hr>
+    <!-- add footer here -->
+    <footer>
+      <p>Tyler Leight &copy; 2022 HFC CIS 122</p>
+    </footer>
+    
+    
+  </body>
+</html>
