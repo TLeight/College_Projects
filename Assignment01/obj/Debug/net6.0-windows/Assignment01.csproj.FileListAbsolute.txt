@@ -1,0 +1,17 @@
+C:\Users\firer\source\repos\Cis130 Student\Assignments\Assignment01\bin\Debug\net6.0-windows\Assignment01.exe
+C:\Users\firer\source\repos\Cis130 Student\Assignments\Assignment01\bin\Debug\net6.0-windows\Assignment01.deps.json
+C:\Users\firer\source\repos\Cis130 Student\Assignments\Assignment01\bin\Debug\net6.0-windows\Assignment01.runtimeconfig.json
+C:\Users\firer\source\repos\Cis130 Student\Assignments\Assignment01\bin\Debug\net6.0-windows\Assignment01.dll
+C:\Users\firer\source\repos\Cis130 Student\Assignments\Assignment01\bin\Debug\net6.0-windows\Assignment01.pdb
+C:\Users\firer\source\repos\Cis130 Student\Assignments\Assignment01\obj\Debug\net6.0-windows\Assignment01.csproj.AssemblyReference.cache
+C:\Users\firer\source\repos\Cis130 Student\Assignments\Assignment01\obj\Debug\net6.0-windows\Assignment01.frmPaintStore.resources
+C:\Users\firer\source\repos\Cis130 Student\Assignments\Assignment01\obj\Debug\net6.0-windows\Assignment01.csproj.GenerateResource.cache
+C:\Users\firer\source\repos\Cis130 Student\Assignments\Assignment01\obj\Debug\net6.0-windows\Assignment01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\firer\source\repos\Cis130 Student\Assignments\Assignment01\obj\Debug\net6.0-windows\Assignment01.AssemblyInfoInputs.cache
+C:\Users\firer\source\repos\Cis130 Student\Assignments\Assignment01\obj\Debug\net6.0-windows\Assignment01.AssemblyInfo.cs
+C:\Users\firer\source\repos\Cis130 Student\Assignments\Assignment01\obj\Debug\net6.0-windows\Assignment01.csproj.CoreCompileInputs.cache
+C:\Users\firer\source\repos\Cis130 Student\Assignments\Assignment01\obj\Debug\net6.0-windows\Assignment01.dll
+C:\Users\firer\source\repos\Cis130 Student\Assignments\Assignment01\obj\Debug\net6.0-windows\refint\Assignment01.dll
+C:\Users\firer\source\repos\Cis130 Student\Assignments\Assignment01\obj\Debug\net6.0-windows\Assignment01.pdb
+C:\Users\firer\source\repos\Cis130 Student\Assignments\Assignment01\obj\Debug\net6.0-windows\Assignment01.genruntimeconfig.cache
+C:\Users\firer\source\repos\Cis130 Student\Assignments\Assignment01\obj\Debug\net6.0-windows\ref\Assignment01.dll
